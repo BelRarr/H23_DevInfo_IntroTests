@@ -58,5 +58,26 @@ namespace H23_DevInfo_IntroTests
             else
                 return a * a;
         }
+
+
+        private bool EstPair(int a)
+        {
+            return a % 2 == 0;
+        }
+
+
+        internal bool EstImpair(int a)
+        {
+            return !EstPair(a);
+        }
+
+
+        public List<int> TrierNombres(List<int> nombres)
+        {
+            if (nombres == null)
+                throw new ArgumentNullException();
+
+            return nombres.Distinct().OrderBy(x => x).ToList();
+        }
     }
 }

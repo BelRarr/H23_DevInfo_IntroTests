@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="H23_DevInfo_IntroTests.Tests" />
+	</ItemGroup>
+	
 </Project>
